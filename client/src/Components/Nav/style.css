@@ -1,0 +1,13 @@
+a {
+    color: white;
+}
+
+.navbar-nav > a:hover {
+    color: pink;
+}
+
+
+a:hover {
+    color: white;
+}
+

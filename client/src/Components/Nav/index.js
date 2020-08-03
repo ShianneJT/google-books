@@ -1,12 +1,13 @@
 import React from 'react';
+import './style.css';
 
 function Nav() {
     return (
-        <nav class='navbar navbar-expand-lg navbar-light bg-primary'>
-        <a class='navbar-brand' href='/'>React Google Books</a>
-        <div class='navbar-nav'>
-            <a class='nav-item nav-link' href='/'>Search</a>
-            <a class='nav-item nav-link' href='/saved'>Saved</a>
+        <nav className='navbar navbar-expand-lg bg-primary'>
+        <a className='navbar-brand' href='/'>React Google Books</a>
+        <div className='navbar-nav'>
+            <a className='nav-item nav-link' href='/'>Search</a>
+            <a className='nav-item nav-link' href='/saved'>Saved</a>
         </div>
     </nav>
     );

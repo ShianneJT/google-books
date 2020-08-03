@@ -1,16 +1,24 @@
 import React from 'react';
-import Nav from './Components/Nav';
-import Header from './Components/Header';
-import Search from './Components/Search';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Search from './pages/Search';
+import Saved from './pages/Saved';
+
 
 function App() {
-  return (
-    <div>
-      <Nav />
-      <Header />
-      <Search />
-    </div>
-  );
+    return (
+        <Router>
+            <Nav />
+            <Header />
+            <div>
+                <Route exact path="/" component={Search} />
+                <Route exact path="/saved" component={Saved} />
+            </div>
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;
