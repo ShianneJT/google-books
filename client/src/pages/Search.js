@@ -67,12 +67,12 @@ class Books extends Component {
                                     </TitleRow>
                                 </Row>
                                 <p>{book.volumeInfo.description}</p>
-                                <p><a href={book.volumeInfo.infoLink} target="_blank" rel="noopener noreferrer">Book Info</a></p>
+                                <p><a href={book.volumeInfo.infoLink} target="_blank" rel="noopener noreferrer" style={{color: '#243144', textDecoration: 'underline'}}>Book Info</a></p>
                                 <Button key={book.volumeInfo.title} onClick={() => this.handleSave(book.id)} className='input-lg'>Save</Button>
                             </ListItem>
                         ))}
                     </List>
-                </ResultsContainer>
+                </ResultsContainer> 
             </>
         )
     }
